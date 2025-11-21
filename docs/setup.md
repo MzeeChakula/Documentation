@@ -4,7 +4,7 @@ This guide will help you set up the MzeeChakula project locally for development.
 
 ## Prerequisites
 
--   **Python 3.9+**
+-   **Python 3.12+**
 -   **Node.js 16+**
 -   **Git**
 

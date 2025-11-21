@@ -31,7 +31,7 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-  logo: assets/logo.png
+  logo: assets/logo.svg
   favicon: assets/favicon.ico
 
 extra_css:
@@ -47,11 +47,15 @@ markdown_extensions:
   - pymdownx.snippets
   - tables
   - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 nav:
   - Home: index.md
   - Project Setup: setup.md
   - Models & Architecture: models.md
+  - Knowledge Graph: knowledge_graph.md
   - Datasets: datasets.md
   - API Reference:
       - Backend API: https://mzeechakula-backend.onrender.com/docs
