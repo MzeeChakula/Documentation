@@ -18,7 +18,7 @@
         <link rel="prev" href="../setup/">
       
       
-        <link rel="next" href="../datasets/">
+        <link rel="next" href="../knowledge_graph/">
       
       
         
@@ -98,7 +98,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="MzeeChakula Docs" class="md-header__button md-logo" aria-label="MzeeChakula Docs" data-md-component="logo">
       
-  <img src="../assets/logo.png" alt="logo">
+  <img src="../assets/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -285,6 +285,25 @@
   
   
     <li class="md-tabs__item">
+      <a href="../knowledge_graph/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Knowledge Graph
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
       <a href="../datasets/" class="md-tabs__link">
         
   
@@ -344,7 +363,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="MzeeChakula Docs" class="md-nav__button md-logo" aria-label="MzeeChakula Docs" data-md-component="logo">
       
-  <img src="../assets/logo.png" alt="logo">
+  <img src="../assets/logo.svg" alt="logo">
 
     </a>
     MzeeChakula Docs
@@ -497,10 +516,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#performance" class="md-nav__link">
+  <a href="#performance-metrics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Performance
+        Performance Metrics
       
     </span>
   </a>
@@ -513,15 +532,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#model-architectures" class="md-nav__link">
+  <a href="#detailed-model-architectures" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Model Architectures
+        Detailed Model Architectures
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Model Architectures">
+    <nav class="md-nav" aria-label="Detailed Model Architectures">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -536,10 +555,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-hetgnn-heterogeneous-gnn" class="md-nav__link">
+  <a href="#2-hetgnn-heterogeneous-graph-neural-network" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. HetGNN (Heterogeneous GNN)
+        2. HetGNN (Heterogeneous Graph Neural Network)
       
     </span>
   </a>
@@ -558,10 +577,65 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#other-evaluated-models" class="md-nav__link">
+  <a href="#4-r-gcn-relational-graph-convolutional-network" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Other Evaluated Models
+        4. R-GCN (Relational Graph Convolutional Network)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-graph-rag-retrieval-augmented-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Graph-RAG (Retrieval Augmented Generation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-kgnn-knowledge-graph-neural-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. KGNN (Knowledge Graph Neural Network)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-g-gpt-graph-gpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. G-GPT (Graph GPT)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-grn-graph-recurrent-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. GRN (Graph Recurrent Network)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-tcn-temporal-convolutional-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. TCN (Temporal Convolutional Network)
       
     </span>
   </a>
@@ -574,10 +648,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#training-process" class="md-nav__link">
+  <a href="#training-pipeline" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Training Process
+        Training Pipeline
       
     </span>
   </a>
@@ -588,6 +662,33 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../knowledge_graph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Knowledge Graph
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -641,10 +742,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -662,8 +763,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -729,9 +830,9 @@
 
 
 <h1 id="models-architecture">Models &amp; Architecture</h1>
-<p>MzeeChakula employs a sophisticated ensemble of Graph Neural Networks (GNNs) to provide accurate nutrition recommendations.</p>
+<p>MzeeChakula employs a sophisticated ensemble of Graph Neural Networks (GNNs) to provide accurate nutrition recommendations. This section details the architecture and theoretical underpinnings of each model used in our system.</p>
 <h2 id="the-ensemble-system">The Ensemble System</h2>
-<p>Our production model combines the strengths of three top-performing architectures:</p>
+<p>Our production model combines the strengths of three top-performing architectures to ensure robustness and accuracy across diverse user scenarios.</p>
 <table>
 <thead>
 <tr>
@@ -758,41 +859,86 @@
 </tr>
 </tbody>
 </table>
-<h3 id="performance">Performance</h3>
+<h3 id="performance-metrics">Performance Metrics</h3>
 <ul>
-<li><strong>Inference Time</strong>: ~15ms (CPU) / ~3ms (GPU)</li>
-<li><strong>Model Size</strong>: ~20.4 MB</li>
+<li><strong>Inference Time</strong>: ~15ms (CPU) / ~3ms (GPU) for top-10 recommendations.</li>
+<li><strong>Model Size</strong>: ~20.4 MB (optimized for deployment).</li>
 <li><strong>Accuracy</strong>: High confidence in link prediction tasks (AUC &gt; 0.90).</li>
 </ul>
-<h2 id="model-architectures">Model Architectures</h2>
-<p>We evaluated 9 different GNN architectures before selecting the final ensemble.</p>
+<hr />
+<h2 id="detailed-model-architectures">Detailed Model Architectures</h2>
+<p>We evaluated 9 different GNN architectures. Below is a detailed breakdown of each.</p>
 <h3 id="1-crgn-compositional-reasoning-graph-network">1. CRGN (Compositional Reasoning Graph Network)</h3>
-<p>Designed to reason about the composition of meals. It learns embeddings that capture how different foods combine to meet nutritional goals.</p>
-<h3 id="2-hetgnn-heterogeneous-gnn">2. HetGNN (Heterogeneous GNN)</h3>
-<p>Specifically built for heterogeneous graphs where nodes and edges have different types. It uses type-specific aggregation functions to capture the distinct roles of Foods, Nutrients, and Conditions.</p>
+<p><strong>Architecture</strong>:
+CRGN is designed to address the challenge of <strong>compositional generalization</strong>—the ability to understand and generate new combinations of known components.
+-   <strong>Graph Parser</strong>: Decomposes the input (user profile and food items) into object-centric subgraphs.
+-   <strong>Graph Matcher</strong>: Uses a shared GNN to compute localized node representations, implicitly inducing factor nodes between related concepts.
+-   <strong>Reasoning Module</strong>: Learns embeddings that capture how different foods combine to meet specific nutritional goals, effectively modeling the "composition" of a meal plan.</p>
+<p><strong>Why we used it</strong>: Nutrition planning is inherently compositional (e.g., "Rice" + "Beans" + "Spinach"). CRGN excels at understanding these combinations.</p>
+<h3 id="2-hetgnn-heterogeneous-graph-neural-network">2. HetGNN (Heterogeneous Graph Neural Network)</h3>
+<p><strong>Architecture</strong>:
+HetGNN is specifically built for <strong>heterogeneous graphs</strong> where nodes and edges have different types (e.g., Food, Nutrient, Condition).
+-   <strong>Random Walk Sampling</strong>: Samples a fixed number of strongly correlated heterogeneous neighbors for each node to handle size variations.
+-   <strong>Type-based Aggregation</strong>: Aggregates content embeddings from neighbors of the same type using specific neural network modules (NN-1, NN-2).
+-   <strong>Attention Mechanism</strong>: Combines aggregated representations from different neighbor types using attention weights to form the final node embedding.</p>
+<p><strong>Why we used it</strong>: Our knowledge graph is highly heterogeneous. HetGNN allows us to treat "Vitamin A" (Nutrient) differently from "Hypertension" (Condition) during message passing.</p>
 <h3 id="3-gat-graph-attention-network">3. GAT (Graph Attention Network)</h3>
-<p>Uses attention mechanisms to weigh the importance of neighbors. For example, it can learn that for a diabetic patient, the "Sugar Content" neighbor is more important than "Color".</p>
-<h3 id="other-evaluated-models">Other Evaluated Models</h3>
-<ul>
-<li><strong>R-GCN</strong>: Relational GCN, good for knowledge graphs but heavier.</li>
-<li><strong>Graph-RAG</strong>: Retrieval-Augmented Generation on graphs.</li>
-<li><strong>KGNN</strong>: Knowledge Graph Neural Network.</li>
-<li><strong>G-GPT</strong>: Generative Pre-trained Transformer for graphs.</li>
-<li><strong>GRN</strong>: Graph Recurrent Network (for temporal data).</li>
-<li><strong>TCN</strong>: Temporal Convolutional Network.</li>
-</ul>
-<h2 id="training-process">Training Process</h2>
-<p>The models were trained on the <strong>MzeeChakula Knowledge Graph</strong>.</p>
-<ul>
-<li><strong>Task</strong>: Link Prediction (predicting <code>RECOMMENDED_FOR</code> edges between Food and User/Condition nodes).</li>
-<li><strong>Loss Function</strong>: Binary Cross-Entropy.</li>
-<li><strong>Optimizer</strong>: AdamW.</li>
-<li><strong>Framework</strong>: PyTorch Geometric.</li>
-</ul>
-<div class="admonition info">
-<p class="admonition-title">Reproducibility</p>
-<p>Training scripts and notebooks are available in the <code>models/</code> repository.</p>
-</div>
+<p><strong>Architecture</strong>:
+GAT introduces an <strong>attention mechanism</strong> to standard GNNs.
+-   <strong>Attention Coefficients</strong>: Computes the importance of node $j$ to node $i$ ($e_{ij}$) using a shared attention mechanism $a(Wh_i, Wh_j)$.
+-   <strong>Multi-Head Attention</strong>: Runs multiple attention mechanisms in parallel to capture different aspects of relationships (e.g., one head focuses on flavor compatibility, another on nutritional value).
+-   <strong>Weighted Aggregation</strong>: Updates node features as a weighted sum of neighbors, where weights are the learned attention coefficients.</p>
+<p><strong>Why we used it</strong>: Not all connections are equally important. For a diabetic user, the link between "Soda" and "Sugar" should have a much higher weight than "Soda" and "Water content".</p>
+<h3 id="4-r-gcn-relational-graph-convolutional-network">4. R-GCN (Relational Graph Convolutional Network)</h3>
+<p><strong>Architecture</strong>:
+R-GCN extends GCNs to multi-relational graphs by using <strong>relation-specific weight matrices</strong>.
+-   <strong>Message Passing</strong>: For each relation type $r$ (e.g., <code>CONTAINS</code>, <code>AVOIDS</code>), a specific weight matrix $W_r$ is used to transform the neighbor's features.
+-   <strong>Regularization</strong>: Uses basis decomposition or block-diagonal decomposition to reduce the number of parameters and prevent overfitting on rare relations.
+-   <strong>Self-Loops</strong>: Includes relation-specific self-loops to ensure node identity is preserved.</p>
+<p><strong>Why we used it</strong>: It explicitly models the different types of edges in our graph, ensuring that the <code>CAUSES</code> relationship is mathematically distinct from <code>PREVENTS</code>.</p>
+<h3 id="5-graph-rag-retrieval-augmented-generation">5. Graph-RAG (Retrieval Augmented Generation)</h3>
+<p><strong>Architecture</strong>:
+Graph-RAG combines graph retrieval with Large Language Models (LLMs).
+-   <strong>Subgraph Retrieval</strong>: Instead of fetching flat text chunks, it retrieves relevant subgraphs (e.g., a patient's condition node and all connected recommended foods).
+-   <strong>Context Enrichment</strong>: The retrieved subgraph is linearized or embedded and provided as context to an LLM.
+-   <strong>Reasoning</strong>: The LLM uses the structural context to generate natural language explanations for recommendations.</p>
+<p><strong>Why we used it</strong>: To provide explainable AI. It allows the system to tell the user <em>why</em> a food is recommended (e.g., "Because you have hypertension, and this food is low in sodium").</p>
+<h3 id="6-kgnn-knowledge-graph-neural-network">6. KGNN (Knowledge Graph Neural Network)</h3>
+<p><strong>Architecture</strong>:
+KGNN integrates a GNN encoder with a knowledge-aware decoder.
+-   <strong>GNN Encoder</strong>: Aggregates information from the local neighborhood to learn entity embeddings.
+-   <strong>Knowledge-Aware Decoder</strong>: Uses a scoring function (like TransE or TransH) to predict the plausibility of a triple $(h, r, t)$.
+-   <strong>Receptive Field</strong>: Can be extended to multiple hops to capture high-order structural information.</p>
+<p><strong>Why we used it</strong>: It is highly effective for <strong>link prediction</strong>, which is the core task of recommending a new food (link) to a user.</p>
+<h3 id="7-g-gpt-graph-gpt">7. G-GPT (Graph GPT)</h3>
+<p><strong>Architecture</strong>:
+Adapts the Transformer decoder-only architecture (like GPT-3) for graph data.
+-   <strong>Graph Linearization</strong>: Converts the graph structure into a sequence of tokens (nodes and edges) that can be processed by a Transformer.
+-   <strong>Masked Attention</strong>: Uses masked self-attention to predict the next node or edge in a sequence, effectively "generating" a meal plan step-by-step.
+-   <strong>Positional Encodings</strong>: Uses graph-specific positional encodings to retain structural information in the sequence.</p>
+<p><strong>Why we used it</strong>: To explore <strong>generative</strong> capabilities, such as creating entire weekly meal plans from scratch rather than just recommending single items.</p>
+<h3 id="8-grn-graph-recurrent-network">8. GRN (Graph Recurrent Network)</h3>
+<p><strong>Architecture</strong>:
+Combines GNNs with Recurrent Neural Networks (RNNs) to handle <strong>dynamic/temporal graphs</strong>.
+-   <strong>Spatial-Temporal Processing</strong>: A GNN processes the spatial structure at each time step, while an RNN (like LSTM or GRU) updates the hidden state over time.
+-   <strong>Graph Filter</strong>: Replaces standard linear transformations in RNNs with graph convolution operations.</p>
+<p><strong>Why we used it</strong>: To model <strong>seasonality</strong>. Food availability and prices in Uganda change with the seasons (Dry vs. Wet), and GRN captures these temporal dynamics.</p>
+<h3 id="9-tcn-temporal-convolutional-network">9. TCN (Temporal Convolutional Network)</h3>
+<p><strong>Architecture</strong>:
+A specialized neural network for sequence modeling using <strong>1D dilated causal convolutions</strong>.
+-   <strong>Causal Convolutions</strong>: Ensures that predictions at time $t$ only depend on history (no future leakage).
+-   <strong>Dilated Convolutions</strong>: Allows the network to have a very large receptive field (history) with few layers, capturing long-range temporal dependencies.
+-   <strong>Residual Blocks</strong>: Uses residual connections to allow for deeper networks and stable training.</p>
+<p><strong>Why we used it</strong>: An alternative to GRN for modeling time-series data like price fluctuations and seasonal trends, offering parallelizable training.</p>
+<hr />
+<h2 id="training-pipeline">Training Pipeline</h2>
+<p>All models were trained using the following standardized pipeline:</p>
+<ol>
+<li><strong>Data Splitting</strong>: 80% Train, 10% Validation, 10% Test (stratified by user/condition).</li>
+<li><strong>Loss Function</strong>: Binary Cross-Entropy (for link prediction) or MSE (for score prediction).</li>
+<li><strong>Optimizer</strong>: AdamW with weight decay for regularization.</li>
+<li><strong>Framework</strong>: PyTorch Geometric (PyG) and Deep Graph Library (DGL).</li>
+</ol>
 
 
 

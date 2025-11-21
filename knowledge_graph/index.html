@@ -12,11 +12,13 @@
         <meta name="author" content="MzeeChakula Team">
       
       
-        <link rel="canonical" href="https://mzeechakula.github.io/documentation/datasets/">
+        <link rel="canonical" href="https://mzeechakula.github.io/documentation/knowledge_graph/">
       
       
-        <link rel="prev" href="../knowledge_graph/">
+        <link rel="prev" href="../models/">
       
+      
+        <link rel="next" href="../datasets/">
       
       
         
@@ -27,7 +29,7 @@
     
     
       
-        <title>Datasets - MzeeChakula Docs</title>
+        <title>Knowledge Graph - MzeeChakula Docs</title>
       
     
     
@@ -80,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#datasets-knowledge-graph" class="md-skip">
+        <a href="#knowledge-graph" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Datasets
+              Knowledge Graph
             
           </span>
         </div>
@@ -279,9 +281,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../knowledge_graph/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -298,11 +302,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../datasets/" class="md-tabs__link">
         
   
   
@@ -466,33 +468,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../knowledge_graph/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Knowledge Graph
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -512,7 +487,7 @@
   <span class="md-ellipsis">
     
   
-    Datasets
+    Knowledge Graph
   
 
     
@@ -530,7 +505,7 @@
   <span class="md-ellipsis">
     
   
-    Datasets
+    Knowledge Graph
   
 
     
@@ -556,33 +531,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#data-sources" class="md-nav__link">
+  <a href="#ontology-schema" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data Sources
+        Ontology &amp; Schema
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-knowledge-graph-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Knowledge Graph Structure
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="The Knowledge Graph Structure">
+    <nav class="md-nav" aria-label="Ontology &amp; Schema">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#node-types-features" class="md-nav__link">
+  <a href="#core-entities-nodes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Node Types &amp; Features
+        Core Entities (Nodes)
       
     </span>
   </a>
@@ -590,10 +554,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#edge-types-relationships" class="md-nav__link">
+  <a href="#core-relationships-edges" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Edge Types (Relationships)
+        Core Relationships (Edges)
       
     </span>
   </a>
@@ -606,33 +570,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#processed-datasets" class="md-nav__link">
+  <a href="#reasoning-capabilities" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Processed Datasets
+        Reasoning Capabilities
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reasoning Capabilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-multi-hop-reasoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Multi-Hop Reasoning
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#graph-tensors" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-negative-inference" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Graph Tensors
+        2. Negative Inference
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Graph Tensors">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
-  <a href="#tensor-files" class="md-nav__link">
+  <a href="#3-contextual-filtering" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tensor Files
+        3. Contextual Filtering
       
     </span>
   </a>
@@ -645,10 +620,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-processing-pipeline" class="md-nav__link">
+  <a href="#graph-construction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data Processing Pipeline
+        Graph Construction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualization
       
     </span>
   </a>
@@ -659,6 +645,33 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Datasets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -772,149 +785,131 @@
   
 
 
-<h1 id="datasets-knowledge-graph">Datasets &amp; Knowledge Graph</h1>
-<p>The foundation of MzeeChakula is a comprehensive dataset linking local Ugandan foods to nutritional data and health conditions. This data is structured into a <strong>Heterogeneous Knowledge Graph</strong>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Explore the Graph</p>
-<p>For a deep dive into the graph's schema, ontology, and reasoning capabilities, see the <a href="../knowledge_graph/">Knowledge Graph</a> page.</p>
-</div>
-<h2 id="data-sources">Data Sources</h2>
-<ul>
-<li><strong>Food Composition</strong>: FAO and local Ugandan food composition tables.</li>
-<li><strong>Health Conditions</strong>: WHO guidelines and local health ministry data.</li>
-<li><strong>Cultural Practices</strong>: Surveys and anthropological studies on Ugandan dietary habits.</li>
-<li><strong>Market Data</strong>: Local market surveys for price and seasonality.</li>
-</ul>
-<h2 id="the-knowledge-graph-structure">The Knowledge Graph Structure</h2>
-<p>The graph consists of various node types and edge types, forming a rich network of information.</p>
-<h3 id="node-types-features">Node Types &amp; Features</h3>
+<h1 id="knowledge-graph">Knowledge Graph</h1>
+<p>The <strong>MzeeChakula Knowledge Graph (KG)</strong> is the semantic brain of our system. Unlike traditional databases that store data in rows and columns, our KG stores data as <strong>entities (nodes)</strong> and <strong>relationships (edges)</strong>, allowing the AI to reason about connections between food, health, and culture.</p>
+<h2 id="ontology-schema">Ontology &amp; Schema</h2>
+<p>The graph follows a strict ontology designed to capture the complexities of elderly nutrition in Uganda.</p>
+<h3 id="core-entities-nodes">Core Entities (Nodes)</h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Node Type</th>
-<th style="text-align: left;">Count</th>
-<th style="text-align: left;">Feature Dim</th>
+<th style="text-align: left;">Entity</th>
 <th style="text-align: left;">Description</th>
+<th style="text-align: left;">Examples</th>
+<th style="text-align: left;">Count</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Food</strong></td>
+<td style="text-align: left;">Local food items available in Uganda.</td>
+<td style="text-align: left;"><code>Matoke</code>, <code>Millet Porridge</code>, <code>Nile Perch</code></td>
 <td style="text-align: left;">5,005</td>
-<td style="text-align: left;">8</td>
-<td style="text-align: left;">Features include macronutrients (Protein, Carbs, Fat), energy, and fiber.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Nutrient</strong></td>
+<td style="text-align: left;">Micro and macronutrients.</td>
+<td style="text-align: left;"><code>Vitamin A</code>, <code>Iron</code>, <code>Protein</code></td>
 <td style="text-align: left;">30</td>
-<td style="text-align: left;">30</td>
-<td style="text-align: left;">Detailed micronutrient profiles (Vitamins, Minerals).</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Condition</strong></td>
+<td style="text-align: left;">Health conditions affecting the elderly.</td>
+<td style="text-align: left;"><code>Hypertension</code>, <code>Type 2 Diabetes</code></td>
 <td style="text-align: left;">4,852</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">Health conditions encoded with severity and type.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Benefit</strong></td>
-<td style="text-align: left;">10,000</td>
-<td style="text-align: left;">10,000</td>
-<td style="text-align: left;">Sparse vector representing specific health benefits.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>MealPlan</strong></td>
-<td style="text-align: left;">10,000</td>
-<td style="text-align: left;">4</td>
-<td style="text-align: left;">Historical or template meal plans.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Region</strong></td>
+<td style="text-align: left;">Geographic regions of Uganda.</td>
+<td style="text-align: left;"><code>Central</code>, <code>Northern</code>, <code>Western</code></td>
 <td style="text-align: left;">5</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">Central, Western, Eastern, Northern, etc.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Season</strong></td>
+<td style="text-align: left;">Time periods affecting availability.</td>
+<td style="text-align: left;"><code>Dry Season</code>, <code>Wet Season</code></td>
 <td style="text-align: left;">12</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">Monthly seasonality nodes.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Culture</strong></td>
+<td style="text-align: left;">Cultural groups and practices.</td>
+<td style="text-align: left;"><code>Baganda</code>, <code>Acholi</code></td>
+<td style="text-align: left;">8</td>
 </tr>
 </tbody>
 </table>
-<h3 id="edge-types-relationships">Edge Types (Relationships)</h3>
+<h3 id="core-relationships-edges">Core Relationships (Edges)</h3>
+<p>The power of the KG lies in how these entities are connected:</p>
 <ul>
-<li><code>CONTAINS</code>: Food $\rightarrow$ Nutrient (Weighted by amount).</li>
-<li><code>AFFECTS</code>: Nutrient $\rightarrow$ Condition (Positive/Negative impact).</li>
-<li><code>AVAILABLE_IN</code>: Food $\rightarrow$ Season.</li>
-<li><code>GROWN_IN</code>: Food $\rightarrow$ Region.</li>
-<li><code>CULTURALLY_RELEVANT</code>: Food $\rightarrow$ Culture.</li>
-<li><code>HAS_PRICE</code>: Food $\rightarrow$ PriceRange.</li>
-</ul>
-<h2 id="processed-datasets">Processed Datasets</h2>
-<p>The <code>data/processed/</code> directory contains cleaned CSVs ready for analysis and model training:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th style="text-align: left;">Rows</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><code>food_composition_clean.csv</code></td>
-<td style="text-align: left;">5,006</td>
-<td style="text-align: left;">Nutritional breakdown of foods.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>health_conditions_clean.csv</code></td>
-<td style="text-align: left;">5,029</td>
-<td style="text-align: left;">Mapping of conditions to dietary needs.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>food_prices_clean.csv</code></td>
-<td style="text-align: left;">10,001</td>
-<td style="text-align: left;">Market prices for cost optimization.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>cultural_food_practices_clean.csv</code></td>
-<td style="text-align: left;">10,002</td>
-<td style="text-align: left;">Cultural relevance data.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>food_seasonality_clean.csv</code></td>
-<td style="text-align: left;">5,001</td>
-<td style="text-align: left;">Availability of foods by month.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="graph-tensors">Graph Tensors</h2>
-<p>For efficient GNN training, the graph is converted into PyTorch Geometric tensors stored in <code>data/graph_tensors/</code>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">torch_geometric.data</span><span class="w"> </span><span class="kn">import</span> <span class="n">HeteroData</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Load the precomputed graph</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">data</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;graph_tensors/graph_pyg.pt&#39;</span><span class="p">)</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Node types: </span><span class="si">{</span><span class="n">data</span><span class="o">.</span><span class="n">node_types</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Edge types: </span><span class="si">{</span><span class="n">data</span><span class="o">.</span><span class="n">edge_types</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Food features shape: </span><span class="si">{</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Food&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="tensor-files">Tensor Files</h3>
+<li>
+<p><strong><code>Food -[CONTAINS]-&gt; Nutrient</code></strong></p>
 <ul>
-<li><code>{Node}_features.npy</code>: Numpy arrays containing node feature vectors.</li>
-<li><code>{Source}-{Rel}-{Target}_edge_index.npy</code>: Adjacency matrices for each relation type.</li>
-<li><code>node_mappings.json</code>: Maps original IDs (e.g., "Matoke") to graph indices (e.g., <code>0</code>).</li>
+<li><em>Properties</em>: <code>amount</code> (per 100g), <code>unit</code> (mg, g, ug).</li>
+<li><em>Usage</em>: Allows the system to calculate the nutritional value of a meal.</li>
 </ul>
-<h2 id="data-processing-pipeline">Data Processing Pipeline</h2>
+</li>
+<li>
+<p><strong><code>Nutrient -[AFFECTS]-&gt; Condition</code></strong></p>
+<ul>
+<li><em>Properties</em>: <code>impact</code> (Positive/Negative), <code>mechanism</code> (e.g., "Raises blood pressure").</li>
+<li><em>Usage</em>: The core reasoning path. If <em>Salt</em> <code>AFFECTS</code> <em>Hypertension</em> negatively, and <em>Chips</em> <code>CONTAINS</code> <em>Salt</em>, the system infers <em>Chips</em> are bad for <em>Hypertension</em>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Food -[AVAILABLE_IN]-&gt; Season</code></strong></p>
+<ul>
+<li><em>Usage</em>: Ensures recommendations are practical. We won't recommend mangoes when they are out of season.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>Food -[CULTURALLY_RELEVANT]-&gt; Culture</code></strong></p>
+<ul>
+<li><em>Usage</em>: Personalization. A Muganda elder might prefer Matoke, while an Acholi elder might prefer Millet.</li>
+</ul>
+</li>
+</ul>
+<h2 id="reasoning-capabilities">Reasoning Capabilities</h2>
+<p>The Knowledge Graph enables several types of advanced reasoning:</p>
+<h3 id="1-multi-hop-reasoning">1. Multi-Hop Reasoning</h3>
+<p>The system can traverse multiple edges to find indirect connections.</p>
+<blockquote>
+<p><strong>Query</strong>: "What should I eat for Anemia?"
+<strong>Path</strong>: <code>Anemia</code> &lt;---(treats)--- <code>Iron</code> &lt;---(contains)--- <code>Liver</code>
+<strong>Result</strong>: Recommend Liver.</p>
+</blockquote>
+<h3 id="2-negative-inference">2. Negative Inference</h3>
+<p>The system understands what <em>not</em> to recommend.</p>
+<blockquote>
+<p><strong>Query</strong>: "I have High Blood Pressure."
+<strong>Path</strong>: <code>Hypertension</code> &lt;---(worsens)--- <code>Sodium</code> &lt;---(contains)--- <code>Salted Fish</code>
+<strong>Result</strong>: Avoid Salted Fish.</p>
+</blockquote>
+<h3 id="3-contextual-filtering">3. Contextual Filtering</h3>
+<p>Combining health needs with environmental constraints.</p>
+<blockquote>
+<p><strong>Query</strong>: "Recommend a fruit for Vitamin C in January."
+<strong>Path</strong>: <code>Vitamin C</code> &lt;---(contains)--- <code>Orange</code> ---(available_in)---&gt; <code>January</code>
+<strong>Result</strong>: Recommend Orange (if available).</p>
+</blockquote>
+<h2 id="graph-construction">Graph Construction</h2>
+<p>The graph was built using a semi-automated pipeline:</p>
 <ol>
-<li><strong>Ingestion</strong>: Raw CSVs are loaded from <code>data/raw/</code>.</li>
-<li><strong>Cleaning</strong>: Missing values are imputed, and units are standardized.</li>
-<li><strong>Graph Construction</strong>: Nodes and edges are created in Neo4j.</li>
-<li><strong>Enrichment</strong>: Context nodes (Season, Region) are linked.</li>
-<li><strong>Export</strong>: The graph is exported to PyTorch Geometric tensors for training.</li>
+<li><strong>Data Ingestion</strong>: Structured data from food composition tables (FAO) and medical guidelines (WHO).</li>
+<li><strong>Entity Linking</strong>: Mapping local food names (e.g., "Posho") to standardized ontology terms (e.g., "Maize Meal").</li>
+<li><strong>Graph Projection</strong>: Stored in <strong>Neo4j</strong> for querying and exported as <strong>PyTorch Geometric</strong> tensors for GNN training.</li>
 </ol>
+<h2 id="visualization">Visualization</h2>
+<p>Below is a simplified visualization of a subgraph centered around "Matoke":</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>graph LR
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    Matoke(Food: Matoke) --&gt;|CONTAINS| K(Nutrient: Potassium)
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    Matoke --&gt;|GROWN_IN| Central(Region: Central)
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    Matoke --&gt;|AVAILABLE_IN| AllYear(Season: All Year)
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    K --&gt;|HELPS| Hypertension(Condition: Hypertension)
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    style Matoke fill:#d90000,color:white
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    style K fill:#fcdc04,color:black
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    style Hypertension fill:#078930,color:white
+</code></pre></div>
 
 
 
