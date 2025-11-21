@@ -1,0 +1,48 @@
+:root {
+  /* MzeeChakula Brand Colors (Uganda Flag Inspired) */
+  --md-primary-fg-color:        #d90000;
+  --md-primary-fg-color--light: #ff4d4d;
+  --md-primary-fg-color--dark:  #a00000;
+  
+  --md-accent-fg-color:         #fcdc04;
+  --md-accent-fg-color--transparent: rgba(252, 220, 4, 0.1);
+  
+  /* Custom variables for use in content */
+  --mc-green: #078930;
+  --mc-yellow: #fcdc04;
+  --mc-red: #d90000;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #d90000;
+  --md-accent-fg-color:         #fcdc04;
+}
+
+/* Custom styling for headers to match brand */
+.md-typeset h1 {
+  color: var(--mc-red);
+  font-weight: 700;
+}
+
+.md-typeset h2 {
+  color: var(--mc-green);
+  border-bottom: 2px solid var(--mc-yellow);
+  padding-bottom: 0.5rem;
+}
+
+/* Button customization */
+.md-button.md-button--primary {
+  background-color: var(--mc-red);
+  border-color: var(--mc-red);
+  color: white;
+}
+
+.md-button.md-button--primary:hover {
+  background-color: var(--md-primary-fg-color--dark);
+}
+
+/* Admonition custom colors if needed */
+.md-typeset .admonition.note,
+.md-typeset .details.note {
+  border-color: var(--mc-green);
+}

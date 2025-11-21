@@ -1,0 +1,57 @@
+site_name: MzeeChakula Docs
+site_url: https://mzeechakula.github.io/documentation/
+site_description: Documentation for MzeeChakula - AI-powered nutrition planning for the elderly in Uganda.
+site_author: MzeeChakula Team
+
+repo_name: MzeeChakula/Model-Testing
+repo_url: https://github.com/MzeeChakula/Model-Testing
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - content.code.copy
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+  - attr_list
+
+nav:
+  - Home: index.md
+  - Project Setup: setup.md
+  - Models & Architecture: models.md
+  - Datasets: datasets.md
+  - API Reference:
+      - Backend API: https://mzeechakula-backend.onrender.com/docs
