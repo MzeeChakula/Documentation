@@ -24,6 +24,9 @@ Our production model combines the strengths of three top-performing architecture
 We evaluated 9 different GNN architectures. Below is a detailed breakdown of each.
 
 ### 1. CRGN (Compositional Reasoning Graph Network)
+
+![CRGN Architecture](assets/crgn_architecture.png)
+
 **Architecture**:
 CRGN is designed to address the challenge of **compositional generalization**—the ability to understand and generate new combinations of known components.
 -   **Graph Parser**: Decomposes the input (user profile and food items) into object-centric subgraphs.
@@ -32,7 +35,11 @@ CRGN is designed to address the challenge of **compositional generalization**—
 
 **Why we used it**: Nutrition planning is inherently compositional (e.g., "Rice" + "Beans" + "Spinach"). CRGN excels at understanding these combinations.
 
+
 ### 2. HetGNN (Heterogeneous Graph Neural Network)
+
+![HetGNN Architecture](assets/hetgnn_architecture.png)
+
 **Architecture**:
 HetGNN is specifically built for **heterogeneous graphs** where nodes and edges have different types (e.g., Food, Nutrient, Condition).
 -   **Random Walk Sampling**: Samples a fixed number of strongly correlated heterogeneous neighbors for each node to handle size variations.
@@ -42,6 +49,9 @@ HetGNN is specifically built for **heterogeneous graphs** where nodes and edges 
 **Why we used it**: Our knowledge graph is highly heterogeneous. HetGNN allows us to treat "Vitamin A" (Nutrient) differently from "Hypertension" (Condition) during message passing.
 
 ### 3. GAT (Graph Attention Network)
+
+![GAT Architecture](assets/gat_architecture.png)
+
 **Architecture**:
 GAT introduces an **attention mechanism** to standard GNNs.
 -   **Attention Coefficients**: Computes the importance of node $j$ to node $i$ ($e_{ij}$) using a shared attention mechanism $a(Wh_i, Wh_j)$.
@@ -104,6 +114,33 @@ A specialized neural network for sequence modeling using **1D dilated causal con
 **Why we used it**: An alternative to GRN for modeling time-series data like price fluctuations and seasonal trends, offering parallelizable training.
 
 ---
+
+## XGBoost Calorie Predictor
+
+![XGBoost Architecture](assets/xgboost_architecture.png)
+
+In addition to the GNN ensemble, we use **XGBoost** (Extreme Gradient Boosting) for predicting daily caloric needs based on user demographics.
+
+**Architecture**:
+XGBoost is a gradient boosting framework that builds an ensemble of decision trees sequentially.
+-   **Input Features**: Age, weight, height, activity level, gender, and health conditions
+-   **Boosting Process**: Each tree corrects the errors of the previous trees
+-   **Regularization**: L1 and L2 regularization to prevent overfitting
+-   **Objective Function**: Minimizes mean squared error (MSE) for calorie prediction
+
+**Why we used it**: 
+- Highly accurate for tabular data with demographic features
+- Fast inference time (~1ms per prediction)
+- Interpretable feature importance
+- Robust to missing values and outliers
+
+**Performance**:
+- Mean Absolute Error (MAE): ~50 kcal
+- R² Score: 0.94
+- Training time: <5 minutes on CPU
+
+---
+
 
 ## Training Pipeline
 

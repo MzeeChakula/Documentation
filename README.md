@@ -24,3 +24,9 @@ To deploy to GitHub Pages:
 ```bash
 mkdocs gh-deploy
 ```
+
+## Architecture Diagram
+
+![MzeeChakula Architecture Diagram](docs/assets/architecture_diagram.png)
+
+*The diagram illustrates the three main components of the system: Knowledge Graph, GNN Ensemble, and Application Layer.*
