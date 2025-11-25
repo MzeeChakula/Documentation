@@ -648,6 +648,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#xgboost-calorie-predictor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XGBoost Calorie Predictor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#training-pipeline" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -869,6 +880,7 @@
 <h2 id="detailed-model-architectures">Detailed Model Architectures</h2>
 <p>We evaluated 9 different GNN architectures. Below is a detailed breakdown of each.</p>
 <h3 id="1-crgn-compositional-reasoning-graph-network">1. CRGN (Compositional Reasoning Graph Network)</h3>
+<p><img alt="CRGN Architecture" src="../assets/crgn_architecture.jpg" /></p>
 <p><strong>Architecture</strong>:
 CRGN is designed to address the challenge of <strong>compositional generalization</strong>—the ability to understand and generate new combinations of known components.
 -   <strong>Graph Parser</strong>: Decomposes the input (user profile and food items) into object-centric subgraphs.
@@ -876,6 +888,7 @@ CRGN is designed to address the challenge of <strong>compositional generalizatio
 -   <strong>Reasoning Module</strong>: Learns embeddings that capture how different foods combine to meet specific nutritional goals, effectively modeling the "composition" of a meal plan.</p>
 <p><strong>Why we used it</strong>: Nutrition planning is inherently compositional (e.g., "Rice" + "Beans" + "Spinach"). CRGN excels at understanding these combinations.</p>
 <h3 id="2-hetgnn-heterogeneous-graph-neural-network">2. HetGNN (Heterogeneous Graph Neural Network)</h3>
+<p><img alt="HetGNN Architecture" src="../assets/hetgnn_architecture.jpg" /></p>
 <p><strong>Architecture</strong>:
 HetGNN is specifically built for <strong>heterogeneous graphs</strong> where nodes and edges have different types (e.g., Food, Nutrient, Condition).
 -   <strong>Random Walk Sampling</strong>: Samples a fixed number of strongly correlated heterogeneous neighbors for each node to handle size variations.
@@ -883,6 +896,7 @@ HetGNN is specifically built for <strong>heterogeneous graphs</strong> where nod
 -   <strong>Attention Mechanism</strong>: Combines aggregated representations from different neighbor types using attention weights to form the final node embedding.</p>
 <p><strong>Why we used it</strong>: Our knowledge graph is highly heterogeneous. HetGNN allows us to treat "Vitamin A" (Nutrient) differently from "Hypertension" (Condition) during message passing.</p>
 <h3 id="3-gat-graph-attention-network">3. GAT (Graph Attention Network)</h3>
+<p><img alt="GAT Architecture" src="../assets/gat_architecture.jpg" /></p>
 <p><strong>Architecture</strong>:
 GAT introduces an <strong>attention mechanism</strong> to standard GNNs.
 -   <strong>Attention Coefficients</strong>: Computes the importance of node $j$ to node $i$ ($e_{ij}$) using a shared attention mechanism $a(Wh_i, Wh_j)$.
@@ -930,6 +944,25 @@ A specialized neural network for sequence modeling using <strong>1D dilated caus
 -   <strong>Dilated Convolutions</strong>: Allows the network to have a very large receptive field (history) with few layers, capturing long-range temporal dependencies.
 -   <strong>Residual Blocks</strong>: Uses residual connections to allow for deeper networks and stable training.</p>
 <p><strong>Why we used it</strong>: An alternative to GRN for modeling time-series data like price fluctuations and seasonal trends, offering parallelizable training.</p>
+<hr />
+<h2 id="xgboost-calorie-predictor">XGBoost Calorie Predictor</h2>
+<p><img alt="XGBoost Architecture" src="../assets/xgboost_architecture.jpg" /></p>
+<p>In addition to the GNN ensemble, we use <strong>XGBoost</strong> (Extreme Gradient Boosting) for predicting daily caloric needs based on user demographics.</p>
+<p><strong>Architecture</strong>:
+XGBoost is a gradient boosting framework that builds an ensemble of decision trees sequentially.
+-   <strong>Input Features</strong>: Age, weight, height, activity level, gender, and health conditions
+-   <strong>Boosting Process</strong>: Each tree corrects the errors of the previous trees
+-   <strong>Regularization</strong>: L1 and L2 regularization to prevent overfitting
+-   <strong>Objective Function</strong>: Minimizes mean squared error (MSE) for calorie prediction</p>
+<p><strong>Why we used it</strong>: 
+- Highly accurate for tabular data with demographic features
+- Fast inference time (~1ms per prediction)
+- Interpretable feature importance
+- Robust to missing values and outliers</p>
+<p><strong>Performance</strong>:
+- Mean Absolute Error (MAE): ~50 kcal
+- R² Score: 0.94
+- Training time: &lt;5 minutes on CPU</p>
 <hr />
 <h2 id="training-pipeline">Training Pipeline</h2>
 <p>All models were trained using the following standardized pipeline:</p>
