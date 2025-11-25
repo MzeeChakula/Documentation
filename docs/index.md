@@ -40,4 +40,4 @@ The system consists of three main components:
 2.  **GNN Ensemble**: Models that reason over the graph to generate recommendations.
 3.  **Application Layer**: A user-friendly interface for interaction.
 
-![MzeeChakula Architecture](assets/architecture_diagram.png)
+![MzeeChakula Architecture](assets/architecture.png)
