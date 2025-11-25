@@ -1,2 +1,5 @@
 .env
 .venv/*
+writeup/
+__pycache__/
+*.pyc

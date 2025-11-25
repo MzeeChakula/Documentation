@@ -25,7 +25,7 @@ We evaluated 9 different GNN architectures. Below is a detailed breakdown of eac
 
 ### 1. CRGN (Compositional Reasoning Graph Network)
 
-![CRGN Architecture](assets/crgn_architecture.png)
+![CRGN Architecture](assets/crgn_architecture.jpg)
 
 **Architecture**:
 CRGN is designed to address the challenge of **compositional generalization**—the ability to understand and generate new combinations of known components.
@@ -38,7 +38,7 @@ CRGN is designed to address the challenge of **compositional generalization**—
 
 ### 2. HetGNN (Heterogeneous Graph Neural Network)
 
-![HetGNN Architecture](assets/hetgnn_architecture.png)
+![HetGNN Architecture](assets/hetgnn_architecture.jpg)
 
 **Architecture**:
 HetGNN is specifically built for **heterogeneous graphs** where nodes and edges have different types (e.g., Food, Nutrient, Condition).
@@ -50,7 +50,7 @@ HetGNN is specifically built for **heterogeneous graphs** where nodes and edges 
 
 ### 3. GAT (Graph Attention Network)
 
-![GAT Architecture](assets/gat_architecture.png)
+![GAT Architecture](assets/gat_architecture.jpg)
 
 **Architecture**:
 GAT introduces an **attention mechanism** to standard GNNs.
@@ -117,7 +117,7 @@ A specialized neural network for sequence modeling using **1D dilated causal con
 
 ## XGBoost Calorie Predictor
 
-![XGBoost Architecture](assets/xgboost_architecture.png)
+![XGBoost Architecture](assets/xgboost_architecture.jpg)
 
 In addition to the GNN ensemble, we use **XGBoost** (Extreme Gradient Boosting) for predicting daily caloric needs based on user demographics.
 
